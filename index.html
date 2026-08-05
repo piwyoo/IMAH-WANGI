@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3R Imah Wangi Parfume - Display Rak Data Stok</title>
+    <!-- Menghubungkan ke file CSS external -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="rack-frame">
+        <div class="rack-header">
+            <div class="header-title">
+                <div class="logo-3r">3R</div>
+                <div class="brand-name">imah wangi</div>
+            </div>
+            <div class="header-sub">PARFUME NON ALKOHOL</div>
+        </div>
+
+        <!-- FILTER KATEGORI -->
+        <div class="category-bar">
+            <button class="cat-btn active" onclick="filterCategory('ALL')">SEMUA STOK</button>
+            <button class="cat-btn" onclick="filterCategory('BEST SELLER')">BEST SELLER</button>
+            <button class="cat-btn" onclick="filterCategory('PARFUM COWO')">PARFUM COWO</button>
+            <button class="cat-btn" onclick="filterCategory('PARFUM CEWE')">PARFUM CEWE</button>
+            <button class="cat-btn" onclick="filterCategory('ANEKA RASA')">ANEKA RASA</button>
+            <button class="cat-btn" onclick="filterCategory('ARTIS')">ARTIS</button>
+            <button class="cat-btn" onclick="filterCategory('VINTAGE')">VINTAGE</button>
+            <button class="cat-btn" onclick="filterCategory('ARAB')">ARAB</button>
+            <button class="cat-btn" onclick="filterCategory('SABUN')">SABUN</button>
+        </div>
+
+        <div class="rack-shelves" id="rack-container"></div>
+    </div>
+
+    <!-- POP-UP DETAIL -->
+    <div class="modal-overlay" id="modal-detail">
+        <div class="modal-card">
+            <button class="btn-close" onclick="closeModal()">&times;</button>
+            <div class="modal-img-box">
+                <img src="botol.jpg" alt="Botol Parfum Perak 3R">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title">Nama Varian</h2>
+                <h4 id="modal-category">Kategori</h4>
+                <p id="modal-desc">Deskripsi varian parfum murni non alkohol 3R Imah Wangi.</p>
+                <div class="badge-non-alkohol">100% NON ALKOHOL</div>
+                <a href="#" id="wa-link" target="_blank" class="btn-wa">Pesan via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript external -->
+    <script src="script.js"></script>
+</body>
+</html>
