@@ -1,4 +1,4 @@
-const phoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp toko kamu
+const phoneNumber = "6285774059645"; // Ganti dengan nomor WhatsApp toko kamu
 
 // DATA STOK LENGKAP
 const stockData = [
